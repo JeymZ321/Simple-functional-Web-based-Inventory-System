@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Inventory Management System</title>
+        <link rel="stylesheet" href="inventory.css">
+
+    </head>
+
+        <body>
+
+            <h1>Inventory Management System</h1>
+
+            <div id="search-bar">
+            <input type="text" id="search-input" placeholder="Search for an item" onkeyup="searchItems()">
+            <div id="inventory-list">
+            <h2>Inventory List</h2>
+            <ul id="items-list"></ul>
+           
+
+            </div>
+
+            <div id="add-item">
+            <div id="search-bar"></div>
+
+            <h3>Add New Item</h3>
+            <input type="text" id="item-name" placeholder="Item Name">
+            <input type="number" id="item-quantity" placeholder="Quantity">
+            <button onclick="addItem()">Add Item</button>
+            <button onclick="clearFields()">Clear</button>
+            <button onclick="clearInventory()">Clear Inventory</button>
+
+            </div>
+
+            <script src="inventory.js"></script>
+
+        </body>
+
+</html>
